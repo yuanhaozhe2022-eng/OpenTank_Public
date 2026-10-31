@@ -64628,6 +64628,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Note: if you are seeing this,\nand you have no idea what\nis going on,PLEASE put the \ncasing on"
+		(at 44.5 63.75 0)
+		(layer "F.SilkS")
+		(uuid "23429ec1-93b7-4156-b414-24e397f7ef8f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Big boi XT60"
 		(at 35.25 37.75 0)
 		(layer "F.SilkS")
@@ -64664,18 +64676,6 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Note: if you are seeing this,\nand you have no idea what\nis going on,PLEASE put the \ncasing on"
-		(at 127.25 98.5 0)
-		(layer "F.SilkS")
-		(uuid "23429ec1-93b7-4156-b414-24e397f7ef8f")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "OpenTank v0.1\nBy Eric Y."
 		(at 40.132 35.052 0)
 		(layer "F.SilkS")
@@ -64687,6 +64687,18 @@
 			)
 			(justify left bottom)
 		)
+	)
+	(barcode
+		(at 139 92 0)
+		(layer "F.SilkS")
+		(size 13 13)
+		(text "https://github.com/yuanhaozhe2022-eng/OpenTank_Public")
+		(text_height 1)
+		(type qr)
+		(ecc_level L)
+		(hide yes)
+		(knockout no)
+		(uuid "122716db-e85f-4221-b0c4-b7b01057cf5c")
 	)
 	(segment
 		(start 125.2103 76.7853)
