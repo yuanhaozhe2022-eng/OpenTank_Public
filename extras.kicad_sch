@@ -1,0 +1,1198 @@
+(kicad_sch
+  (version 20230121)
+  (generator eeschema)
+  (uuid "138711dc-61c6-5864-9423-c072874f3302")
+  (paper "A3")
+  (title_block
+    (title "Tank Board - External ESC ports, ESC power, temperature sensor")
+    (date "2026-10-28")
+    (rev "0.1")
+    (company "Open Tank Board"))
+  (lib_symbols
+    (symbol "tank_board:R"
+      (pin_numbers hide)
+      (pin_names (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R" (at 2.032 0 90) (effects (font (size 1.27 1.27))))
+      (property "Value" "R" (at 0 0 90) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at -1.778 0 90) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "R res resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Resistor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "R_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27)))))))
+    (symbol "tank_board:Conn_01x03"
+      (pin_names (offset 1.016) hide)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J" (at 0 5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Conn_01x03" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Conn_01x03_1_1"
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none)))
+        (rectangle
+          (start -1.27 2.667)
+          (end 0 2.413)
+          (stroke (width 0.1524) (type default))
+          (fill (type none)))
+        (rectangle
+          (start -1.27 3.81)
+          (end 1.27 -3.81)
+          (stroke (width 0.254) (type default))
+          (fill (type background)))
+        (pin passive line
+          (at -5.08 2.54 0)
+          (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27)))))))
+    (symbol "power:GND"
+      (power)
+      (pin_names (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "GND" (at 0 -3.81 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (symbol "GND_0_1"
+        (polyline
+          (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27))
+          (stroke (width 0) (type default))
+          (fill (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))))
+    (symbol "tank_board:Conn_01x02"
+      (pin_names (offset 1.016) hide)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J" (at 0 2.54 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "Conn_01x02" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "connector" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "Conn_01x02_1_1"
+        (rectangle
+          (start -1.27 -2.413)
+          (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type none)))
+        (rectangle
+          (start -1.27 0.127)
+          (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none)))
+        (rectangle
+          (start -1.27 1.27)
+          (end 1.27 -3.81)
+          (stroke (width 0.254) (type default))
+          (fill (type background)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27)))))))
+    (symbol "tank_board:VBAT"
+      (power)
+      (pin_names (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "VBAT" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Power symbol creates a global label with name \"VBAT\""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (symbol "VBAT_0_1"
+        (polyline (pts (xy -0.762 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+      (symbol "VBAT_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0) hide
+          (name "VBAT" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))))
+    (symbol "tank_board:TMP1075DGK"
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U" (at -6.35 6.35 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "TMP1075DGK" (at 6.35 6.35 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
+        (at 0 -6.985 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "https://www.ti.com/lit/gpn/tmp1075"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "temperature sensor I2C single channel"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "I2C-bus digital temperature sensor and thermal watchdog, VSSOP-8"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "VSSOP*3.0x3.0mm*P0.65mm*"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (symbol "TMP1075DGK_0_1"
+        (rectangle
+          (start -7.62 5.08)
+          (end 7.62 -5.08)
+          (stroke (width 0.254) (type default))
+          (fill (type background))))
+      (symbol "TMP1075DGK_1_1"
+        (pin bidirectional line
+          (at 10.16 2.54 180)
+          (length 2.54)
+          (name "SDA" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))
+        (pin input line
+          (at 10.16 0 180)
+          (length 2.54)
+          (name "SCL" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27)))))
+        (pin open_collector line
+          (at 10.16 -2.54 180)
+          (length 2.54)
+          (name "ALERT" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -7.62 90)
+          (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 -2.54 0)
+          (length 2.54)
+          (name "A2" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 0 0)
+          (length 2.54)
+          (name "A1" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27)))))
+        (pin input line
+          (at -10.16 2.54 0)
+          (length 2.54)
+          (name "A0" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 7.62 270)
+          (length 2.54)
+          (name "V+" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27)))))))
+    (symbol "power:+3V3"
+      (power)
+      (pin_names (offset 0))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Value" "+3V3" (at 0 3.556 0) (effects (font (size 1.27 1.27))))
+      (property "Footprint" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "global power" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\""
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (symbol "+3V3_0_1"
+        (polyline (pts (xy -0.762 1.27) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 0) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none)))
+        (polyline (pts (xy 0 2.54) (xy 0.762 1.27)) (stroke (width 0) (type default)) (fill (type none))))
+      (symbol "+3V3_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0) hide
+          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))))
+    (symbol "tank_board:C"
+      (pin_numbers hide)
+      (pin_names (offset 0.254))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+      (property "Value" "C" (at 0.635 -2.54 0) (effects (font (size 1.27 1.27)) (justify left)))
+      (property "Footprint" "" (at 0.9652 -3.81 0) (effects (font (size 1.27 1.27)) hide))
+      (property "Datasheet" "~" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_keywords" "cap capacitor" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (property "ki_description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide))
+      (property "ki_fp_filters" "C_*" (at 0 0 0) (effects (font (size 1.27 1.27)) hide))
+      (symbol "C_0_1"
+        (polyline
+          (pts (xy -2.032 -0.762) (xy 2.032 -0.762))
+          (stroke (width 0.508) (type default))
+          (fill (type none)))
+        (polyline
+          (pts (xy -2.032 0.762) (xy 2.032 0.762))
+          (stroke (width 0.508) (type default))
+          (fill (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))))))
+  (polyline
+    (pts (xy 15 15) (xy 250 15))
+    (stroke (width 0) (type dash))
+    (uuid "dd03f58d-376f-55a5-b7ba-851eb0de3ebb"))
+  (polyline
+    (pts (xy 250 15) (xy 250 140))
+    (stroke (width 0) (type dash))
+    (uuid "659b7984-e552-5fcd-8b82-6a6f6b4c77cb"))
+  (polyline
+    (pts (xy 250 140) (xy 15 140))
+    (stroke (width 0) (type dash))
+    (uuid "79131c1e-ec9b-5e36-aa04-e6e36bd901ba"))
+  (polyline
+    (pts (xy 15 140) (xy 15 15))
+    (stroke (width 0) (type dash))
+    (uuid "beaa24f6-1cd5-5ea7-80fa-d5ddf445af47"))
+  (text "EXTERNAL ESC PORTS  (signal + GND only, BEC pin left open)"
+    (at 16.51 19.05 0)
+    (effects (font (size 2 2)) (justify left bottom))
+    (uuid "9a57493b-509e-5ebb-916a-fca7d62d82e5"))
+  (wire
+    (pts (xy 86.36 39.37) (xy 83.82 39.37))
+    (stroke (width 0) (type default))
+    (uuid "efc0459f-2694-5059-802a-5edc11e00a06"))
+  (global_label "TUR_ROT_SERVO"
+    (shape input)
+    (at 83.82 39.37 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "7f29a427-2992-57f5-8563-e0223cc968ea")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 83.82 39.37 0)
+      (effects (font (size 1.27 1.27)) hide)))
+  (wire
+    (pts (xy 93.98 39.37) (xy 96.52 39.37))
+    (stroke (width 0) (type default))
+    (uuid "9c8aa1c0-eec2-589d-8383-f8a31549c8ee"))
+  (label "ESC1_SIG"
+    (at 96.52 39.37 0)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "a1068a95-fd5a-5687-97ee-77bf3a8af17b"))
+  (wire
+    (pts (xy 144.78 39.37) (xy 142.24 39.37))
+    (stroke (width 0) (type default))
+    (uuid "bdfa52f6-41fe-522c-afcd-fcf1513b8d2e"))
+  (label "ESC1_SIG"
+    (at 142.24 39.37 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "7fe44d8e-5afb-504f-ab22-268be85a2a92"))
+  (no_connect (at 144.78 41.91) (uuid "ca4a7486-a62e-59d5-9ae9-d1caeec172ce"))
+  (wire
+    (pts (xy 144.78 44.45) (xy 142.24 44.45))
+    (stroke (width 0) (type default))
+    (uuid "e03abd6b-7947-548d-b979-4dcfd99b0365"))
+  (wire
+    (pts (xy 142.24 44.45) (xy 142.24 46.99))
+    (stroke (width 0) (type default))
+    (uuid "11bfcc61-342e-5b5a-b8b4-f22b20058b57"))
+  (wire
+    (pts (xy 86.36 64.77) (xy 83.82 64.77))
+    (stroke (width 0) (type default))
+    (uuid "e0147ad2-5c45-5971-aaf6-f6950c018725"))
+  (global_label "TUR_ELEV_SERVO"
+    (shape input)
+    (at 83.82 64.77 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "8cc32e17-45fa-5b88-9cf9-63863b38d38a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 83.82 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)))
+  (wire
+    (pts (xy 93.98 64.77) (xy 96.52 64.77))
+    (stroke (width 0) (type default))
+    (uuid "121eecaa-3599-5b15-9a93-f85a07bfb561"))
+  (label "ESC2_SIG"
+    (at 96.52 64.77 0)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "62f6a785-2bfb-5470-a428-ac1e25d2cf4f"))
+  (wire
+    (pts (xy 144.78 64.77) (xy 142.24 64.77))
+    (stroke (width 0) (type default))
+    (uuid "40e5e1dc-c82f-5d01-a6d5-55068d5d88a3"))
+  (label "ESC2_SIG"
+    (at 142.24 64.77 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "fd7cc89f-d53d-59fe-8bab-03ef9b8a4702"))
+  (no_connect (at 144.78 67.31) (uuid "17fac7f2-7cd4-50e0-9996-fa97831505a9"))
+  (wire
+    (pts (xy 144.78 69.85) (xy 142.24 69.85))
+    (stroke (width 0) (type default))
+    (uuid "1c27a99c-5d25-5f85-89cf-29d1e933eb2d"))
+  (wire
+    (pts (xy 142.24 69.85) (xy 142.24 72.39))
+    (stroke (width 0) (type default))
+    (uuid "880766b1-d62c-5352-8203-29d8e04219bd"))
+  (wire
+    (pts (xy 86.36 90.17) (xy 83.82 90.17))
+    (stroke (width 0) (type default))
+    (uuid "673c66fd-2875-59a7-a599-7a85291cf3c6"))
+  (global_label "SERVO_PWM14"
+    (shape input)
+    (at 83.82 90.17 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "8ec7c46e-b299-55f8-847a-443ec9730ccb")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 83.82 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)))
+  (wire
+    (pts (xy 93.98 90.17) (xy 96.52 90.17))
+    (stroke (width 0) (type default))
+    (uuid "01295c77-048f-5f01-b191-dacbfe3d37fd"))
+  (label "ESC3_SIG"
+    (at 96.52 90.17 0)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "213be101-04a4-55ac-9b22-635087f90357"))
+  (wire
+    (pts (xy 144.78 90.17) (xy 142.24 90.17))
+    (stroke (width 0) (type default))
+    (uuid "e363a6e9-d1e9-53cf-8218-76e2a9f7fae1"))
+  (label "ESC3_SIG"
+    (at 142.24 90.17 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "2d3620a8-8370-5b29-9517-a0b062ea96c9"))
+  (no_connect (at 144.78 92.71) (uuid "cc4e766d-809a-5bd5-bf50-657094afd9d9"))
+  (wire
+    (pts (xy 144.78 95.25) (xy 142.24 95.25))
+    (stroke (width 0) (type default))
+    (uuid "56ad8b01-095d-5d15-865e-40a09b481086"))
+  (wire
+    (pts (xy 142.24 95.25) (xy 142.24 97.79))
+    (stroke (width 0) (type default))
+    (uuid "c33b725f-1aba-501b-bf69-4727ae1ea777"))
+  (wire
+    (pts (xy 86.36 115.57) (xy 83.82 115.57))
+    (stroke (width 0) (type default))
+    (uuid "2f86db50-81be-5d85-a122-2e4e7a39c449"))
+  (global_label "SERVO_PWM15"
+    (shape input)
+    (at 83.82 115.57 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid "798be2f1-1569-5dad-bc59-1b7529dcfaf5")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 83.82 115.57 0)
+      (effects (font (size 1.27 1.27)) hide)))
+  (wire
+    (pts (xy 93.98 115.57) (xy 96.52 115.57))
+    (stroke (width 0) (type default))
+    (uuid "a7433e75-a321-5a15-bff2-416a7f5c3d22"))
+  (label "ESC4_SIG"
+    (at 96.52 115.57 0)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "e31c2fb9-436a-5088-820d-87b272c16a7d"))
+  (wire
+    (pts (xy 144.78 115.57) (xy 142.24 115.57))
+    (stroke (width 0) (type default))
+    (uuid "95ab0f16-2939-586e-aa9d-c2a72148f900"))
+  (label "ESC4_SIG"
+    (at 142.24 115.57 180)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid "5708bd84-5ceb-5cfc-a15c-7b3b460b7f74"))
+  (no_connect (at 144.78 118.11) (uuid "abe08d54-1c83-5c1a-be02-15fd6a013631"))
+  (wire
+    (pts (xy 144.78 120.65) (xy 142.24 120.65))
+    (stroke (width 0) (type default))
+    (uuid "57fc6974-0f94-546e-96f0-c0b1880a1c7d"))
+  (wire
+    (pts (xy 142.24 120.65) (xy 142.24 123.19))
+    (stroke (width 0) (type default))
+    (uuid "ce781594-c5ca-50f7-90d2-3178e5ab5ef6"))
+  (text "Signal = normal 50Hz servo pulse from the PCA9685. ESC1/2 share the turret servo channels (CH0/CH1),"
+    (at 20.32 124.46 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "a0fae992-4459-5b93-ae26-684d5b7c5e5a"))
+  (text "ESC3/4 share spare servo CH14/CH15 - use the servo header OR the ESC port on a channel, not both."
+    (at 20.32 129.54 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "0886561b-a057-5c88-b845-e196a1f68ee0"))
+  (text "Power the ESCs from the XT30 outputs below (battery voltage, after fuse + reverse protection)."
+    (at 20.32 134.62 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "029c53f2-7b35-5708-96e5-29b8349d2da1"))
+  (polyline
+    (pts (xy 15 150) (xy 250 150))
+    (stroke (width 0) (type dash))
+    (uuid "f302e723-7b75-5666-b082-90efcc3b5c47"))
+  (polyline
+    (pts (xy 250 150) (xy 250 215))
+    (stroke (width 0) (type dash))
+    (uuid "57b47c10-d004-5e61-bb6b-890a1b5ab631"))
+  (polyline
+    (pts (xy 250 215) (xy 15 215))
+    (stroke (width 0) (type dash))
+    (uuid "298ab77c-44bb-571e-94a8-b87362079c6a"))
+  (polyline
+    (pts (xy 15 215) (xy 15 150))
+    (stroke (width 0) (type dash))
+    (uuid "ac6e334c-573c-5440-bda8-03b12f662007"))
+  (text "ESC POWER OUT  2x XT30 (each feeds 2 ESCs with a Y-lead)"
+    (at 16.51 153.67 0)
+    (effects (font (size 2 2)) (justify left bottom))
+    (uuid "a544856d-77c9-545b-ae2d-eb86c35ba063"))
+  (wire
+    (pts (xy 54.61 180.34) (xy 52.07 180.34))
+    (stroke (width 0) (type default))
+    (uuid "09729210-7288-5e87-9470-43be2d9f6db2"))
+  (wire
+    (pts (xy 52.07 180.34) (xy 52.07 175.26))
+    (stroke (width 0) (type default))
+    (uuid "959372f6-f9db-55e3-8824-b6009460760e"))
+  (wire
+    (pts (xy 54.61 182.88) (xy 52.07 182.88))
+    (stroke (width 0) (type default))
+    (uuid "6eac11a7-93bb-5c2d-b7a9-6f5a6dd15e1c"))
+  (wire
+    (pts (xy 52.07 182.88) (xy 52.07 187.96))
+    (stroke (width 0) (type default))
+    (uuid "340ffe1b-e601-55d2-a41a-34995362aa5d"))
+  (wire
+    (pts (xy 124.46 180.34) (xy 121.92 180.34))
+    (stroke (width 0) (type default))
+    (uuid "138e3c53-2bf4-5f9f-839d-fa5ada3d33c5"))
+  (wire
+    (pts (xy 121.92 180.34) (xy 121.92 175.26))
+    (stroke (width 0) (type default))
+    (uuid "e2c4deaf-13ba-52c3-8b53-255b1961b629"))
+  (wire
+    (pts (xy 124.46 182.88) (xy 121.92 182.88))
+    (stroke (width 0) (type default))
+    (uuid "0f586adf-3e17-5a42-bec2-cf74239d9bf5"))
+  (wire
+    (pts (xy 121.92 182.88) (xy 121.92 187.96))
+    (stroke (width 0) (type default))
+    (uuid "16c29cf2-fbca-50c9-a26e-337732c0b6e4"))
+  (text "Shares the main 15A fuse with everything else. Turret ESCs draw little - just no 4x full-stall."
+    (at 20.32 208.28 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "7debe4ad-7eb5-5d77-a36d-31610c466f43"))
+  (polyline
+    (pts (xy 260 15) (xy 405 15))
+    (stroke (width 0) (type dash))
+    (uuid "893f51e8-bc9e-531d-9e4c-bb125aae5617"))
+  (polyline
+    (pts (xy 405 15) (xy 405 140))
+    (stroke (width 0) (type dash))
+    (uuid "20f25b33-9f61-521d-92e7-0e8d63cdcd40"))
+  (polyline
+    (pts (xy 405 140) (xy 260 140))
+    (stroke (width 0) (type dash))
+    (uuid "e94049ae-81aa-5344-aeaa-6dc447456968"))
+  (polyline
+    (pts (xy 260 140) (xy 260 15))
+    (stroke (width 0) (type dash))
+    (uuid "6c791a8f-d28f-59da-aae7-63827a30e98d"))
+  (text "DRIVER TEMPERATURE  TMP1075 (I2C 0x48)"
+    (at 261.62 19.05 0)
+    (effects (font (size 2 2)) (justify left bottom))
+    (uuid "031c6a36-0de7-5420-8a84-231703577ac9"))
+  (wire
+    (pts (xy 330.2 67.31) (xy 332.74 67.31))
+    (stroke (width 0) (type default))
+    (uuid "e6a461f0-ea4e-5ac1-85ec-b0a18c20f6a1"))
+  (global_label "I2C_SDA"
+    (shape bidirectional)
+    (at 332.74 67.31 0)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "0661c71c-a6b7-5229-85b0-d58c9ee31dc7")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 332.74 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)))
+  (wire
+    (pts (xy 330.2 69.85) (xy 332.74 69.85))
+    (stroke (width 0) (type default))
+    (uuid "42e574b0-4e55-5c1e-b770-02f59b72fc83"))
+  (global_label "I2C_SCL"
+    (shape bidirectional)
+    (at 332.74 69.85 0)
+    (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid "9be86afb-178a-5e29-a6e4-9de58f17fb26")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 332.74 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)))
+  (no_connect (at 330.2 72.39) (uuid "0bc59e48-d7e1-5ace-b2ac-93a88e3d5c81"))
+  (wire
+    (pts (xy 320.04 77.47) (xy 320.04 80.01))
+    (stroke (width 0) (type default))
+    (uuid "98d9b6df-9f80-5627-beb9-40a5e6814016"))
+  (wire
+    (pts (xy 309.88 72.39) (xy 307.34 72.39))
+    (stroke (width 0) (type default))
+    (uuid "d5d06354-9d2e-5000-a154-65cd4aae067a"))
+  (wire
+    (pts (xy 309.88 69.85) (xy 307.34 69.85))
+    (stroke (width 0) (type default))
+    (uuid "05ea1144-9a02-5ff9-b26d-53a7811d49c0"))
+  (wire
+    (pts (xy 309.88 67.31) (xy 307.34 67.31))
+    (stroke (width 0) (type default))
+    (uuid "dda43d24-14a9-59e6-8237-1f7c96589c32"))
+  (wire
+    (pts (xy 320.04 62.23) (xy 320.04 59.69))
+    (stroke (width 0) (type default))
+    (uuid "099f1fd3-8f02-508f-b867-fc2e2682ab52"))
+  (wire
+    (pts (xy 369.57 66.04) (xy 369.57 63.5))
+    (stroke (width 0) (type default))
+    (uuid "448de4dd-1a2a-5476-9810-0991e4cca023"))
+  (wire
+    (pts (xy 369.57 73.66) (xy 369.57 76.2))
+    (stroke (width 0) (type default))
+    (uuid "53164bd8-9069-5c49-8308-730629f6531c"))
+  (text "A0-A2 = GND -> address 0x48 (no clash with 0x20/0x40/0x41)."
+    (at 265.43 119.38 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "18068469-c739-5c86-84f0-d2784dd4382e"))
+  (text "Firmware reads it and runs the FAN output (lights CH15) when the drivers get warm."
+    (at 265.43 125.73 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid "2ae106a9-296f-5b8b-83e2-999726032cb9"))
+  (symbol
+    (lib_id "tank_board:R")
+    (at 90.17 39.37 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "089cf88f-4088-5323-92be-7e96c869f2de")
+    (property "Reference" "R1001" (at 90.17 35.56 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "220R" (at 90.17 43.18 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "tank_board_fp:R_0603_1608Metric"
+      (at 90.17 39.37 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 90.17 39.37 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "6a56060e-8ce8-5511-bb3d-9f74327ef3ea"))
+    (pin "2" (uuid "04c39ed6-0ef9-50b6-9ad4-55c341772f81"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "R1001")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:Conn_01x03")
+    (at 149.86 41.91 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8aaee017-eb3a-5258-a199-a9ead8d76948")
+    (property "Reference" "J1001" (at 152.4 40.64 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "ESC1 turret rotation (S nc -)"
+      (at 152.4 43.18 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:PinHeader_1x03_P2.54mm_Vertical"
+      (at 149.86 41.91 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 149.86 41.91 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Note" "Standard ESC plug fits. Middle (+) pin NOT connected so the ESC BEC never fights the servo rail."
+      (at 149.86 41.91 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "3c61c8ef-aabb-5db3-997c-11869c04e894"))
+    (pin "2" (uuid "b5d3dc0c-fa97-59ea-831d-754c345b6aaa"))
+    (pin "3" (uuid "d94af104-7196-52d0-8074-3c4d39d762de"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "J1001")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 142.24 46.99 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "f43fd85b-0ae1-5ba2-9220-557cbec3dffc")
+    (property "Reference" "#PWR1001" (at 142.24 46.99 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 142.24 52.07 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 142.24 46.99 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 142.24 46.99 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "79017fae-fe33-5827-869b-1a46e210584a"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1001")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:R")
+    (at 90.17 64.77 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d3e0e716-e18e-513e-850f-2c017ee89519")
+    (property "Reference" "R1002" (at 90.17 60.96 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "220R" (at 90.17 68.58 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "tank_board_fp:R_0603_1608Metric"
+      (at 90.17 64.77 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 90.17 64.77 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "12509b56-3625-5e8a-9d6c-d8d97c84f41f"))
+    (pin "2" (uuid "20863f9a-4f15-5573-ad73-dad19b27392d"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "R1002")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:Conn_01x03")
+    (at 149.86 67.31 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "806d1abd-b089-5b3e-85e3-d8b7842cb585")
+    (property "Reference" "J1002" (at 152.4 66.04 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "ESC2 gun elevation (S nc -)"
+      (at 152.4 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:PinHeader_1x03_P2.54mm_Vertical"
+      (at 149.86 67.31 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 149.86 67.31 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Note" "Standard ESC plug fits. Middle (+) pin NOT connected so the ESC BEC never fights the servo rail."
+      (at 149.86 67.31 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "3a63e279-d975-59b0-8b10-8815bebaae88"))
+    (pin "2" (uuid "a3599d95-71b7-5e31-b8bf-076154952994"))
+    (pin "3" (uuid "b3803b18-9e57-5fe5-8440-4c826ddbf5a3"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "J1002")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 142.24 72.39 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "12ded246-cfe7-502f-9343-ef438655fa0f")
+    (property "Reference" "#PWR1002" (at 142.24 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 142.24 77.47 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 142.24 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 142.24 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "c98bc148-b716-5faf-9463-d04d344609fc"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1002")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:R")
+    (at 90.17 90.17 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d26b3ae5-2b89-5634-89ed-ec52a33372cd")
+    (property "Reference" "R1003" (at 90.17 86.36 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "220R" (at 90.17 93.98 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "tank_board_fp:R_0603_1608Metric"
+      (at 90.17 90.17 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 90.17 90.17 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "f480c0d5-d9b1-5245-8a36-350baa7aa33c"))
+    (pin "2" (uuid "48d894c3-27a3-51b4-a87a-488828c5e93b"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "R1003")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:Conn_01x03")
+    (at 149.86 92.71 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "73bf9532-c130-5202-bf30-a2a40fd5b7ac")
+    (property "Reference" "J1003" (at 152.4 91.44 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "ESC3 (CH14) (S nc -)"
+      (at 152.4 93.98 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:PinHeader_1x03_P2.54mm_Vertical"
+      (at 149.86 92.71 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 149.86 92.71 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Note" "Standard ESC plug fits. Middle (+) pin NOT connected so the ESC BEC never fights the servo rail."
+      (at 149.86 92.71 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "0b509ac4-1334-516a-bf39-574857cc82eb"))
+    (pin "2" (uuid "1ed23fca-daa5-59c3-9484-70e4e4159a74"))
+    (pin "3" (uuid "67356255-125e-5416-99fb-62805e81eb82"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "J1003")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 142.24 97.79 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "d4a88970-03a5-58d9-8160-90fa409a6a22")
+    (property "Reference" "#PWR1003" (at 142.24 97.79 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 142.24 102.87 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 142.24 97.79 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 142.24 97.79 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "5d4c0d59-b27f-5324-b66d-225ac467ec46"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1003")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:R")
+    (at 90.17 115.57 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1b90dc43-61e9-5c27-92a8-2f422770fb09")
+    (property "Reference" "R1004" (at 90.17 111.76 90) (effects (font (size 1.27 1.27))))
+    (property "Value" "220R" (at 90.17 119.38 90) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "tank_board_fp:R_0603_1608Metric"
+      (at 90.17 115.57 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 90.17 115.57 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "41ce342c-24fa-526f-a7ca-fa4fd72fb7aa"))
+    (pin "2" (uuid "369e5637-6156-5e08-86ce-9f51da407cc0"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "R1004")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:Conn_01x03")
+    (at 149.86 118.11 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bf292b0a-7951-553d-a327-219437bb7151")
+    (property "Reference" "J1004" (at 152.4 116.84 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "ESC4 (CH15) (S nc -)"
+      (at 152.4 119.38 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:PinHeader_1x03_P2.54mm_Vertical"
+      (at 149.86 118.11 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 149.86 118.11 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Note" "Standard ESC plug fits. Middle (+) pin NOT connected so the ESC BEC never fights the servo rail."
+      (at 149.86 118.11 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "ef7e305b-bb7e-563e-b654-972083974e86"))
+    (pin "2" (uuid "3603f7ba-c6f5-566e-b156-f9c30ae04782"))
+    (pin "3" (uuid "b180a85f-348f-5b81-8985-9e3fff3f6039"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "J1004")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 142.24 123.19 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "33089074-6059-5fac-9189-f06a5b5d4655")
+    (property "Reference" "#PWR1004" (at 142.24 123.19 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 142.24 128.27 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 142.24 123.19 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 142.24 123.19 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "174765db-9474-5aaa-b8ee-81633ebbed82"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1004")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:Conn_01x02")
+    (at 59.69 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a7e5ac76-e5d2-5064-9062-e1e73fccc23e")
+    (property "Reference" "J1005" (at 62.23 179.07 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "ESC POWER 1 (VBAT -)"
+      (at 62.23 181.61 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
+      (at 59.69 180.34 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 59.69 180.34 0) (effects (font (size 1.27 1.27)) hide))
+    (property "MPN" "AMASS XT30U-F" (at 59.69 180.34 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "4dcdb64c-ac35-5cc3-9fc9-6de2cfa97667"))
+    (pin "2" (uuid "26dee8ae-e4a6-5b7f-bec0-41a8d248719d"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "J1005")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:VBAT")
+    (at 52.07 175.26 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "04b4110e-d4ca-5c9c-8483-130a0bb50741")
+    (property "Reference" "#PWR1005" (at 52.07 175.26 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VBAT" (at 52.07 170.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 52.07 175.26 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 52.07 175.26 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "ed77b078-1081-5332-be5a-ebfa03fd814b"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1005")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 52.07 187.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "766d7681-8f7e-5cf3-9775-039786960837")
+    (property "Reference" "#PWR1006" (at 52.07 187.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 52.07 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 52.07 187.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 52.07 187.96 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "06001aff-e8f6-5efb-b85a-d36ec9ebd6b1"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1006")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:Conn_01x02")
+    (at 129.54 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "487d2210-f012-57f9-972d-acc2d35d9c6b")
+    (property "Reference" "J1006"
+      (at 132.08 179.07 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "ESC POWER 2 (VBAT -)"
+      (at 132.08 181.61 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
+      (at 129.54 180.34 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 129.54 180.34 0) (effects (font (size 1.27 1.27)) hide))
+    (property "MPN" "AMASS XT30U-F" (at 129.54 180.34 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "4ef8749c-b2b2-5584-9ab2-4bac4db27e71"))
+    (pin "2" (uuid "088c112a-43ec-546e-a400-f57c29fd9841"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "J1006")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:VBAT")
+    (at 121.92 175.26 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "a8121aae-dada-5d30-9584-cfe3997e0d53")
+    (property "Reference" "#PWR1007" (at 121.92 175.26 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "VBAT" (at 121.92 170.18 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 121.92 175.26 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 121.92 175.26 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "a8b19727-aa29-5361-9d5e-d1848da6dc20"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1007")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 121.92 187.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "0469755d-f0d8-5312-9b02-a55ff4bff6f6")
+    (property "Reference" "#PWR1008" (at 121.92 187.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 121.92 193.04 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 121.92 187.96 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 121.92 187.96 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "e5818f56-e096-5413-9f2d-54a723957095"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1008")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:TMP1075DGK")
+    (at 320.04 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8f7d01bf-2208-5254-b4e7-7e2fe050c7fc")
+    (property "Reference" "U1001" (at 312.42 55.88 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "TMP1075DGK"
+      (at 312.42 58.42 0)
+      (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:VSSOP-8_3.0x3.0mm_P0.65mm"
+      (at 320.04 69.85 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://www.ti.com/lit/gpn/tmp1075"
+      (at 320.04 69.85 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "MPN" "TMP1075DGKR" (at 320.04 69.85 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Note" "Place next to the drive motor drivers"
+      (at 320.04 69.85 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "cb376a55-1939-547e-a688-c4bc67b89fb0"))
+    (pin "2" (uuid "7fb30f04-8676-5101-a4e6-400b7f724f34"))
+    (pin "3" (uuid "4d88b91f-4b95-5a17-91c0-b726c1ac4648"))
+    (pin "4" (uuid "2edda977-511c-5f6a-adc4-cf43abb1e5a4"))
+    (pin "5" (uuid "5e5706f9-83b8-50ed-9ed4-16823b0ec479"))
+    (pin "6" (uuid "d8703268-1be5-5b00-80b6-b98268cf64f7"))
+    (pin "7" (uuid "8519ba43-7eaa-5aa2-b4a0-0216e4a68b2d"))
+    (pin "8" (uuid "efdf2f61-260b-57a0-8ff7-07d14f644bf6"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "U1001")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 320.04 80.01 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "dd33c30c-caa4-553d-937f-df54a44ab835")
+    (property "Reference" "#PWR1009" (at 320.04 80.01 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 320.04 85.09 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 320.04 80.01 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 320.04 80.01 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "01f0aa2d-30e2-5329-98e7-53de9640c43b"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1009")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 307.34 72.39 270)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "16acdcf7-f258-503b-b653-fa6df5bdce54")
+    (property "Reference" "#PWR1010" (at 307.34 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 302.26 72.39 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 307.34 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 307.34 72.39 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "d1a99bdb-a7ec-55ee-82db-9ff9427e8802"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1010")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 307.34 69.85 270)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "bff9187d-7da2-5fa6-863d-8e451fdb5adf")
+    (property "Reference" "#PWR1011" (at 307.34 69.85 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 302.26 69.85 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 307.34 69.85 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 307.34 69.85 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "62ef417e-abb7-55df-873d-f4077107229c"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1011")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 307.34 67.31 270)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "18f0eed5-e4fa-520c-afc7-ac9917c2328b")
+    (property "Reference" "#PWR1012" (at 307.34 67.31 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 302.26 67.31 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 307.34 67.31 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 307.34 67.31 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "06ab356d-2c90-5f99-bc60-159e84c3a788"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1012")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 320.04 59.69 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "31a1f2b8-47d9-590d-972f-ea3dbc7a9c21")
+    (property "Reference" "#PWR1013" (at 320.04 59.69 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "+3V3" (at 320.04 54.61 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 320.04 59.69 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 320.04 59.69 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "3ec94c35-5b54-51eb-a8c7-b9a91cdc7f83"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1013")
+          (unit 1)))))
+  (symbol
+    (lib_id "tank_board:C")
+    (at 369.57 69.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2222413f-b069-5e7d-853f-33066565a60e")
+    (property "Reference" "C1001" (at 372.11 68.58 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Value" "100nF" (at 372.11 71.12 0) (effects (font (size 1.27 1.27)) (justify left)))
+    (property "Footprint" "tank_board_fp:C_0603_1608Metric"
+      (at 369.57 69.85 0)
+      (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "~" (at 369.57 69.85 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "b9692035-7da3-5cb8-a481-ea51ef0228cb"))
+    (pin "2" (uuid "ee928d3f-07f8-5030-973f-edfa8a50186b"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "C1001")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:+3V3")
+    (at 369.57 63.5 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "fcb39763-3a2d-5e65-a26d-97f7f43c1764")
+    (property "Reference" "#PWR1014" (at 369.57 63.5 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "+3V3" (at 369.57 58.42 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 369.57 63.5 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 369.57 63.5 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "c91ead16-5f15-5203-bf43-48481a355a31"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1014")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 369.57 76.2 0)
+    (unit 1)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "4c24834f-e2e9-51cf-9472-6343c16aaae2")
+    (property "Reference" "#PWR1015" (at 369.57 76.2 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Value" "GND" (at 369.57 81.28 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (at 369.57 76.2 0) (effects (font (size 1.27 1.27)) hide))
+    (property "Datasheet" "" (at 369.57 76.2 0) (effects (font (size 1.27 1.27)) hide))
+    (pin "1" (uuid "5f65a54c-2205-5dd3-a5ff-78c49c57f545"))
+    (instances
+      (project "tank_board"
+        (path "/bdf3c807-e23f-4a82-9a17-e9844d125858/138711dc-61c6-5864-9423-c072874f3302"
+          (reference "#PWR1015")
+          (unit 1))))))

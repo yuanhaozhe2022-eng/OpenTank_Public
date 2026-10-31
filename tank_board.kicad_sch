@@ -1,0 +1,142 @@
+(kicad_sch
+  (version 20230121)
+  (generator eeschema)
+  (uuid "bdf3c807-e23f-4a82-9a17-e9844d125858")
+  (paper "A4")
+  (title_block
+    (title "Open Tank Board - ESP32-S3 RC tank controller")
+    (date "2026-10-28")
+    (rev "0.1")
+    (company "Open Tank Board"))
+  (lib_symbols)
+  (text "Open Tank Board v0.1 - ESP32-S3 DevKitC based RC tank controller"
+    (at 25.4 30.48 0)
+    (effects (font (size 2.5 2.5)) (justify left bottom))
+    (uuid "09927d47-3ec7-5e9f-a92c-06af6bcc4dbe"))
+  (sheet
+    (at 25.4 50.8)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "a3616545-4187-52ca-907d-6465244cb0a7")
+    (property "Sheetname" "Power"
+      (at 25.4 50.1 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "power.kicad_sch"
+      (at 25.4 66.4 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "2")))))
+  (sheet
+    (at 76.2 50.8)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "7e6b7000-d05e-5118-8d85-2bb95be4643f")
+    (property "Sheetname" "MCU"
+      (at 76.2 50.1 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "mcu.kicad_sch"
+      (at 76.2 66.4 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "3")))))
+  (sheet
+    (at 127 50.8)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "11c486cb-5226-563a-91ea-5722c7784dc2")
+    (property "Sheetname" "Drive"
+      (at 127 50.1 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "drive.kicad_sch"
+      (at 127 66.4 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "4")))))
+  (sheet
+    (at 177.8 50.8)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "7ca3fbdd-c901-5f94-adc7-98551a5c8abe")
+    (property "Sheetname" "Turret"
+      (at 177.8 50.1 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "turret.kicad_sch"
+      (at 177.8 66.4 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "5")))))
+  (sheet
+    (at 25.4 81.28)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "0b7d93a3-c79d-5bab-a30f-a144861fbb8a")
+    (property "Sheetname" "Sound_SD"
+      (at 25.4 80.58 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "sound.kicad_sch"
+      (at 25.4 96.88 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "6")))))
+  (sheet
+    (at 76.2 81.28)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "1702d0c7-9c2e-5843-aebf-5e68a9a18c56")
+    (property "Sheetname" "Expanders"
+      (at 76.2 80.58 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "expander.kicad_sch"
+      (at 76.2 96.88 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "7")))))
+  (sheet
+    (at 127 81.28)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "a512af1d-e527-5d97-970e-f344cc7e8bab")
+    (property "Sheetname" "Lights"
+      (at 127 80.58 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "lights.kicad_sch"
+      (at 127 96.88 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "8")))))
+  (sheet
+    (at 177.8 81.28)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "fb1ab266-35ae-5443-b589-60df4d345327")
+    (property "Sheetname" "Receiver_IR_Exp"
+      (at 177.8 80.58 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "io.kicad_sch"
+      (at 177.8 96.88 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "9")))))
+  (sheet
+    (at 25.4 111.76)
+    (size 40 15)
+    (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0))
+    (uuid "138711dc-61c6-5864-9423-c072874f3302")
+    (property "Sheetname" "Extras"
+      (at 25.4 111.06 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom)))
+    (property "Sheetfile" "extras.kicad_sch"
+      (at 25.4 127.36 0)
+      (effects (font (size 1.27 1.27)) (justify left top)))
+    (instances (project "tank_board" (path "/bdf3c807-e23f-4a82-9a17-e9844d125858" (page "10")))))
+  (sheet_instances (path "/" (page "1"))))

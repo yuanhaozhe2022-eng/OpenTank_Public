@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "tank_board")(type "KiCad")(uri "${KIPRJMOD}/tank_board.kicad_sym")(options "")(descr "Project symbols"))
+)
