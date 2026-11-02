@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "gyro_board")(type "KiCad")(uri "${KIPRJMOD}/gyro_board.kicad_sym")(options "")(descr "Project symbols"))
+)
